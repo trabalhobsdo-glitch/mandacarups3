@@ -1,0 +1,39 @@
+/* Tema PS3: preto + laranja (igual à landing) — sobrescreve css/style.css no checkout */
+:root{--g:#ff7900;--r:#ff7900;--gold:#ffc23a;--bg:#050505;--line:#3b2412;--mut:#bfbfbf;--ok:#3ddc84}
+body{background:radial-gradient(ellipse at 80% 0,#3a1604 0,#120b07 35%,#050505 75%) fixed;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.ck-bar{background:linear-gradient(100deg,#ff7900,#ffc23a,#ff6800);color:#100900}
+.ck-top{background:#080808;border-bottom:2px solid #ff7900}
+.stp div{background:#120d09;border-color:var(--line);color:#bfbfbf}
+.stp div.on{border-color:#ff7900;color:#fff;box-shadow:0 0 18px #ff790040}
+.stp i{background:#ff7900;color:#100900}.stp div:not(.on) i{background:#4a3a2e;color:#bfbfbf}
+.card{background:#120d09;border-color:var(--line);box-shadow:none;color:#fff}
+.card.sel{border-color:#ff7900}
+.ttl{color:#fff}.ttl b{background:#ff7900;color:#100900}
+.sub{color:#bfbfbf}.side summary{color:#fff}
+.prod{border-color:var(--line)}.prod .nm{color:#eee}.prod img{background:#000}
+.pill{background:#ff7900;color:#100900}
+.tots{border-color:var(--line)}.tots .row{color:#eee}
+.big>span{color:#fff}.big strong{color:#ff9300;text-shadow:0 0 18px #e65a004a}.big small{color:#bfbfbf}
+.ck .pm label,.tabs label,.chip{background:#17100b;border-color:var(--line);color:#fff}
+.ck .pm label:has(input:checked),.tabs label:has(input:checked){border-color:#ff7900;background:#2a1708}
+.tabs em,.chip em{background:#ff7900;color:#100900}
+.pm small{color:#bfbfbf}
+input,select{background:#0b0805;color:#fff;border-color:#4a3320}
+input::placeholder{color:#8a7a6c}
+input:focus,select:focus{border-color:#ff7900;box-shadow:0 0 0 3px #ff790040}
+input.bad{border-color:#ff5a3c}.err,.cerr{color:#ff7a5c}
+.f label{color:#eee}.sec2{color:#ffad36}
+.panel{background:#0e0a07;border-color:#4a3320}.panel p{color:#ccc}
+.cep button,.ghost{background:transparent;border-color:#ff7900;color:#ff9300}
+#cepMsg{color:#bfbfbf}
+.q{border-color:#4a3320}.q button{background:#17100b;color:#fff}.q button:hover{background:#2a1708}
+.btn{background:linear-gradient(100deg,#ff7900,#ffc23a,#ff6800);color:#100900;box-shadow:0 0 24px #ff69009c}
+.btn.wa{background:transparent;color:#3ddc84;border:1.5px solid #3ddc84;box-shadow:none}
+.code{background:#0e0a07;border-color:#4a3320;color:#ddd}
+.wait{color:#fff}.lnk{color:#ff9300}
+.done .ref{background:#2a1708;border-color:#ff7900;color:#ffad36}
+.ghost2{background:transparent;border-color:#ff7900;color:#ff9300}
+.mini,.pixbox small{color:#bfbfbf}
+.row,.row.t{border-color:var(--line)}
+.cor{background:#fff;border-radius:4px;padding:2px 4px}
+#erro{color:#ff7a5c!important}

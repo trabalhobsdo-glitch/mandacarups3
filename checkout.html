@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="robots" content="noindex">
+<title>Finalizar compra | Mandacaru Games</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{background:linear-gradient(180deg,#e9eeea 0,#f6f7f5 320px,#f6f7f5 100%)}
+.ck-bar{background:var(--ok);color:#fff;text-align:center;font-weight:800;font-size:15px;letter-spacing:.02em;padding:9px;text-transform:uppercase}
+.ck-top{background:var(--g);box-shadow:0 6px 18px #0003}
+.ck-top .w{display:flex;align-items:center;justify-content:space-between;height:84px;max-width:1040px}
+.ck-top img{height:70px;width:auto}
+.ck-sec{display:flex;align-items:center;gap:10px;color:#fff;font-size:12px;line-height:1.2;font-weight:500;text-transform:uppercase}
+.ck-sec b{display:block;font-size:15px;font-weight:800}
+.ck{max-width:1040px;margin:22px auto 40px;padding:0 16px}
+.stp{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.stp div{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:14px 6px;text-align:center;font-size:12px;color:var(--mut);line-height:1.25}
+.stp div.on{border:2px solid var(--g);color:#111;font-weight:800;box-shadow:0 4px 14px #0b0b0b1f}
+.stp i{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--g);color:#fff;margin:0 auto 8px}
+.stp div:not(.on) i{background:#9db3a8}
+.lay{display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start}
+.lay .main-col{order:1}.lay .side{order:2}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 2px 10px #0000000a;margin-bottom:16px}
+.card.sel{border:2px solid var(--g)}
+.ttl{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:800;color:var(--g);margin:0 0 6px}
+.ttl b{background:var(--g);color:#fff;border-radius:7px;width:28px;height:28px;display:grid;place-items:center;font-size:15px}
+.sub{color:var(--mut);margin:0 0 16px;font-size:15px}
+.side details{padding:0;border:0}
+.side summary{list-style:none;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:15px;text-transform:uppercase;cursor:pointer;color:#333}
+.side summary::-webkit-details-marker{display:none}
+.side summary svg{transition:transform .2s}.side details[open] summary svg{transform:rotate(180deg)}
+.prod{display:flex;gap:14px;align-items:center;padding:16px 0 18px;border-bottom:1px solid var(--line)}
+.prod img{width:76px;height:76px;border-radius:14px;object-fit:cover;background:#f3eadf;flex-shrink:0}
+.prod .nm{font-weight:700;color:#444;font-size:15px;line-height:1.3}
+.prod .ln{display:flex;align-items:center;gap:12px;margin-top:6px;font-weight:700}
+.pill{display:inline-block;background:var(--g);color:#fff;font-size:11px;font-weight:800;text-transform:uppercase;padding:5px 11px;border-radius:20px;margin-top:8px}
+.tots{border:1.5px solid var(--line);border-radius:20px;padding:18px 20px;margin-top:18px}
+.tots .row{font-size:16px;color:#333}
+.big{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.big>span{color:var(--g);font-weight:800}
+.big strong{display:block;text-align:right;font-size:34px;line-height:1.05;font-weight:800;color:var(--g);letter-spacing:-.03em}
+.big small{display:block;text-align:right;font-size:14px;font-weight:700;color:#555}
+.ck .pm label{border-radius:18px;padding:16px;border-width:1.5px}
+.ck .pm label:has(input:checked){border:2px solid var(--g);background:#f1f8f3}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:14px;padding:11px 14px;font-weight:700}
+.chip em{font-style:normal;font-size:11px;font-weight:800;background:var(--g);color:#fff;padding:4px 9px;border-radius:20px;text-transform:uppercase;margin-left:auto}
+.ck .btn{border-radius:16px;padding:19px;font-size:17px;text-transform:uppercase}
+.mini{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;color:var(--mut);font-size:13px;margin-top:16px}
+.mini span{display:flex;align-items:center;gap:6px}
+@media(max-width:860px){.lay{grid-template-columns:1fr}.lay .side{order:1}.lay .main-col{order:2}.ck-top .w{height:68px}.ck-top img{height:44px}.big strong{font-size:30px}}
+
+.f{margin-top:4px}.f input,.f select{margin-top:4px}
+.sec2{margin:20px 0 8px;font-size:13px;font-weight:800;color:var(--g);text-transform:uppercase;letter-spacing:.04em}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.tabs label{display:flex;gap:10px;align-items:center;border:1.5px solid var(--line);border-radius:14px;padding:14px;cursor:pointer;font-weight:700;background:#fff}
+.tabs label:has(input:checked){border:2px solid var(--g);background:#f1f8f3}
+.tabs input{width:auto;margin:0;accent-color:var(--g)}
+.tabs em{font-style:normal;font-size:10px;font-weight:800;background:var(--g);color:#fff;padding:3px 8px;border-radius:20px;text-transform:uppercase;margin-left:auto}
+.panel{border:1.5px dashed var(--line);border-radius:14px;padding:14px;background:#fcfdfc}
+.panel p{margin:0;color:var(--mut);font-size:14px}
+#card-fields{margin:0}
+.cerr{color:var(--r);font-size:13px;font-weight:700;min-height:18px;margin-top:6px}
+.pixbox{text-align:center}
+.pixbox h2{justify-content:center}
+.qr{width:250px;max-width:72%;margin:14px auto;padding:12px;background:#fff;border:1.5px solid var(--line);border-radius:16px}
+.qr svg{width:100%;height:auto;display:block}
+.code{word-break:break-all;font-size:12px;background:#f6f7f5;border:1px dashed #cfd3cc;border-radius:12px;padding:10px;max-height:84px;overflow:auto;text-align:left;margin:10px 0}
+.wait{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;color:var(--g);margin:14px 0 4px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ok);animation:pl 1.2s infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
+.lnk{background:none;border:0;color:var(--g);font-weight:700;text-decoration:underline;cursor:pointer;margin-top:10px;font-size:14px}
+.done{text-align:center;padding:30px 10px}.done h2{justify-content:center;font-size:26px}
+.done .ref{display:inline-block;background:#f1f8f3;border:1.5px solid var(--g);color:var(--g);font-weight:800;border-radius:12px;padding:8px 16px;margin:10px 0}
+.ghost2{display:flex;align-items:center;justify-content:center;width:100%;background:#fff;border:1.5px solid var(--g);color:var(--g);font-weight:800;border-radius:16px;padding:15px;cursor:pointer}
+</style>
+<link rel="stylesheet" href="css/ps3.css">
+</head>
+<body>
+<div class="ck-bar">Compre com segurança</div>
+<header class="ck-top"><div class="w">
+  <a href="index.html" aria-label="Voltar à loja"><img src="images/logo-mandacaru-games.png" alt="Mandacaru Games" width="70" height="65"></a>
+  <div class="ck-sec"><span class="i" data-i="lock" data-s="30"></span><span><b>Pagamento</b>100% seguro</span></div>
+</div></header>
+
+<main class="ck">
+<div class="stp" aria-label="Etapas">
+  <div class="on" id="s1"><i><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></i>Entrega</div>
+  <div id="s2"><i><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></i>Informações pessoais</div>
+  <div id="s3"><i><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></i>Pagamento</div>
+</div>
+
+<div class="lay">
+  <div class="main-col">
+    <div id="flow">
+    <section class="card sel">
+      <div style="text-align:center;margin-bottom:10px"><img src="images/logo-mandacaru-games.png" alt="Mandacaru Games" width="88" height="82" style="margin:auto;height:82px;width:auto;border-radius:12px"></div>
+      <h2 class="ttl"><b>1</b>Entrega</h2>
+      <p class="sub">Informe seu CEP para ver as opções de frete.</p>
+      <label for="cep" style="font-size:13px;font-weight:700">CEP</label>
+      <div class="cep"><input id="cep" inputmode="numeric" maxlength="9" placeholder="00000-000" autocomplete="postal-code"></div>
+      <div id="cepMsg" aria-live="polite"></div>
+      <div id="opts" class="pm" hidden>
+        <label><input type="radio" name="frete" value="pac" checked><img class="cor cor-lg" src="images/logo-correios.png" alt="Correios" width="38" height="28"><span>PAC · Correios<small id="pacTxt">Entrega econômica</small></span><b class="ok" style="margin-left:auto">Grátis</b></label>
+        <label><input type="radio" name="frete" value="sedex"><img class="cor cor-lg" src="images/logo-correios.png" alt="Correios" width="38" height="28"><span>SEDEX · Correios<small id="sedexTxt">Entrega mais rápida</small></span><b id="sedexPreco" style="margin-left:auto"></b></label>
+      </div>
+    </section>
+
+    <section class="card" id="dados" hidden>
+      <h2 class="ttl"><b>2</b>Seus dados</h2>
+      <p class="sub">Para emitir o pedido e entregar no seu endereço.</p>
+      <div class="f">
+        <label class="s6">Nome completo<input id="nome" autocomplete="name" placeholder="Como está no documento"><span class="err">Informe nome e sobrenome.</span></label>
+        <label class="s3">E-mail<input id="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com"><span class="err">E-mail inválido.</span></label>
+        <label class="s3">Celular (WhatsApp)<input id="tel" inputmode="tel" autocomplete="tel-national" placeholder="(00) 00000-0000"><span class="err">Informe DDD + número.</span></label>
+        <label class="s3">CPF<input id="cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00"><span class="err">CPF inválido.</span></label>
+      </div>
+      <div class="sec2">Endereço de entrega</div>
+      <div class="f">
+        <label class="s4">Rua / Avenida<input id="rua" autocomplete="address-line1"><span class="err">Informe a rua.</span></label>
+        <label class="s2">Número<input id="num" autocomplete="address-line2" inputmode="numeric"><span class="err">Informe o número.</span></label>
+        <label class="s3">Complemento <span style="font-weight:500;color:var(--mut)">(opcional)</span><input id="comp"></label>
+        <label class="s3">Bairro<input id="bairro"><span class="err">Informe o bairro.</span></label>
+        <label class="s4">Cidade<input id="cidade" autocomplete="address-level2"><span class="err">Informe a cidade.</span></label>
+        <label class="s2">UF<input id="uf" maxlength="2" autocomplete="address-level1" style="text-transform:uppercase"><span class="err">UF inválida.</span></label>
+      </div>
+    </section>
+
+    <section class="card" id="pagto" hidden>
+      <h2 class="ttl"><b>3</b>Pagamento</h2>
+      <p class="sub">Escolha como pagar. Tudo acontece aqui, sem sair do site.</p>
+      <div class="tabs">
+        <label><input type="radio" name="metodo" value="pix" checked><span class="i" data-i="pix"></span>Pix<em>Imediato</em></label>
+        <label><input type="radio" name="metodo" value="credit_card"><span class="i" data-i="card"></span>Cartão</label>
+      </div>
+      <div id="pnPix" class="panel"><p>Ao confirmar, mostramos o <b>QR Code</b> e o código <b>copia e cola</b> aqui mesmo. A aprovação é imediata.</p></div>
+      <div id="pnCard" class="panel" hidden>
+        <div class="f" id="card-fields">
+          <label class="s6">Número do cartão<input id="cnum" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="23"></label>
+          <label class="s6">Nome impresso no cartão<input id="cnome" autocomplete="cc-name" placeholder="COMO ESTÁ NO CARTÃO" style="text-transform:uppercase"></label>
+          <label class="s3">Validade<input id="cval" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/AA" maxlength="5"></label>
+          <label class="s3">CVV<input id="ccvv" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4"></label>
+        </div>
+        <div id="parcWrap" hidden style="margin-top:10px"><label style="font-size:13px;font-weight:700">Parcelas<select id="parcSel"></select></label></div>
+        <div class="cerr" id="cardErr" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <p id="erro" role="alert" style="color:var(--r);font-weight:700;font-size:14px;min-height:20px;margin:0 0 8px"></p>
+    <button class="btn" id="fin" type="button" hidden><span class="i" data-i="lock" data-s="22"></span><span id="finTxt">Pagar</span></button>
+    </div>
+
+    <section class="card pixbox" id="pixBox" hidden>
+      <h2 class="ttl"><b>3</b>Pague com Pix</h2>
+      <p class="sub">Abra o app do seu banco, escolha Pix e escaneie o QR Code ou use o copia e cola.</p>
+      <div class="qr" id="qr"></div>
+      <div class="code" id="pixCode"></div>
+      <button class="btn" id="copiar" type="button">Copiar código Pix</button>
+      <div class="wait"><span class="dot"></span><span id="pixSt">Aguardando pagamento…</span></div>
+      <small id="pixExp" style="color:var(--mut)"></small><br>
+      <button class="lnk" id="voltar" type="button">Voltar e alterar dados ou forma de pagamento</button>
+    </section>
+
+    <section class="card done" id="done" hidden>
+      <div style="color:var(--ok)"><span class="i" data-i="check" data-s="64"></span></div>
+      <h2 class="ttl" id="doneT">Pedido confirmado!</h2>
+      <p class="sub" id="doneP"></p>
+      <div class="ref" id="doneRef"></div>
+      <a class="ghost2" href="index.html" style="margin-top:14px">Voltar à loja</a>
+    </section>
+
+    <a class="btn wa" id="wa" hidden target="_blank" rel="noopener">Falar com a gente no WhatsApp</a>
+    <div class="mini"><span><span class="i" data-i="lock" data-s="16"></span>Compra segura</span><span><span class="i" data-i="truck" data-s="16"></span>Frete grátis no PAC</span><span><span class="i" data-i="shield" data-s="16"></span>Dados protegidos</span></div>
+  </div>
+
+  <aside class="side">
+    <section class="card">
+      <details open>
+        <summary><span>Resumo (<span id="rc">1</span>)</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></summary>
+        <div class="prod">
+          <img id="pimg" alt="PlayStation 3 Super Slim" width="76" height="76">
+          <div style="flex:1">
+            <div class="nm" id="pnome"></div>
+            <div class="ln"><div class="q"><button type="button" id="menos" aria-label="Diminuir">−</button><output id="qtd">1</output><button type="button" id="mais" aria-label="Aumentar">+</button></div><span id="pprice"></span></div>
+            <span class="pill">Frete grátis no PAC</span>
+          </div>
+        </div>
+        <div class="tots">
+          <div class="row"><span id="resumo">Produtos</span><span id="sub">—</span></div>
+          <div class="row"><span id="fnome">Frete</span><span id="fval" class="ok">Grátis</span></div>
+          <div class="big"><span>Total</span><div><strong id="tot"></strong><small id="parc"></small></div></div>
+        </div>
+      </details>
+    </section>
+  </aside>
+</div>
+</main>
+
+<script src="js/icons.js"></script>
+<script src="js/config.js"></script>
+<script src="js/tiktok.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="https://js.fastsoftbrasil.com/security.js"></script>
+<script src="js/pedido.js"></script>
+</body>
+</html>
